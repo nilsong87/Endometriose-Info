@@ -195,26 +195,113 @@ a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer Section */
+/* Footer Styles */
 .footer {
     background-color: var(--dark-color);
     color: var(--light-color);
-    padding: 40px 0;
-    text-align: center;
+    position: relative;
 }
 
-.footer a {
-    color: var(--light-color);
+.footer h5 {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer h5:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background: var(--accent-color);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--text-light);
     transition: var(--transition);
 }
 
-.footer a:hover {
+.footer-links a:hover {
+    color: var(--accent-color);
+    padding-left: 5px;
+}
+
+.footer-contact {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-contact i {
+    color: var(--accent-color);
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: var(--transition);
+}
+
+.social-icons a:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.footer-bottom-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    justify-content: flex-end;
+}
+
+.footer-bottom-links li {
+    margin-left: 15px;
+}
+
+.footer-bottom-links a {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.footer-bottom-links a:hover {
     color: var(--accent-color);
 }
 
-.footer p {
-    margin: 0;
-    font-size: 0.9rem;
+hr {
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Responsive Design */
