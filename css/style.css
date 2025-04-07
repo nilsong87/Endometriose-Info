@@ -304,6 +304,22 @@ hr {
     border-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Privacy Policy, Terms and Sitemap Pages */
+.privacy-content .card,
+.terms-content .card {
+    border: none;
+    border-left: 4px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.privacy-content .card:hover,
+.terms-content .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-content
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-section h1 {
